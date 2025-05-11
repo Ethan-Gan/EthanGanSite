@@ -1,0 +1,203 @@
+/* Article container */
+.article-body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 4em;
+  font-family: Calibri, Verdana, sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.7;
+  color: var(--color-text-light);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Support for HTML tags */
+.article-body br {
+ margin: 0px;
+  border: none; 
+  height: 2px;   
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  margin-top: 4px;
+}
+
+/* Headings */
+.article-body h1 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.3em;
+  color: var(--color-text-light);
+}
+
+.article-body h2 {
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  color: var(--color-secondary);
+}
+
+.article-body h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  color: var(--color-text-light);
+}
+
+/* Paragraphs */
+.article-body p {
+  margin-bottom: 1.2em;
+  color: var(--color-text-light);
+}
+
+/* Lists */
+.article-body ul, 
+.article-body ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.2em;
+  color: var(--color-text-light);
+}
+
+.article-body li {
+  margin-bottom: 0.5em;
+}
+
+.article-body li::marker {
+  color: var(--color-secondary);
+}
+
+/* Links */
+.article-body a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.article-body a:hover {
+  border-bottom-color: var(--color-secondary);
+}
+
+/* Images */
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5em auto;
+  display: block;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  transition: transform 0.3s ease;
+}
+
+.article-body img:hover {
+  transform: scale(1.01);
+}
+
+/* Code blocks and inline code */
+.article-body pre {
+  background: var(--color-background-light);
+  padding: 1.2em;
+  overflow-x: auto;
+  border-radius: 8px;
+  margin: 1.5em 0;
+  border: 1px solid var(--color-border);
+  position: relative;
+}
+
+.article-body pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.article-body pre::-webkit-scrollbar-track {
+  background: var(--color-background-light);
+  border-radius: 4px;
+}
+
+.article-body pre::-webkit-scrollbar-thumb {
+  background: var(--color-background-muted);
+  border-radius: 4px;
+}
+
+.article-body pre::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-light);
+}
+
+.article-body code {
+  background-color: var(--color-background-muted);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--color-secondary);
+}
+
+/* Blockquotes */
+.article-body blockquote {
+  border-left: 4px solid var(--color-secondary);
+  padding: 0.8em 0 0.8em 1.2em;
+  margin: 1.5em 0;
+  background-color: var(--color-background-light);
+  border-radius: 0 8px 8px 0;
+}
+
+.article-body blockquote p {
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* Horizontal Rule */
+.article-body hr {
+  border: none;
+  height: 2px;
+  background-color: var(--color-secondary);
+  margin: 2em 0;
+  opacity: 0.2;
+  border-radius: 2px;
+}
+
+/* Tables */
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  border: 1px solid var(--color-border);
+}
+
+.article-body th,
+.article-body td {
+  padding: 0.8em;
+  border: 1px solid var(--color-border);
+}
+
+.article-body th {
+  background-color: var(--color-background-light);
+  font-weight: bold;
+  text-align: left;
+}
+
+.article-body tr:nth-child(even) {
+  background-color: var(--color-background-light);
+}
+
+/* Selection */
+.article-body ::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+}
+
+/* Loading text */
+.loadingMessage {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 3em;
+  margin-top: 2em;
+  animation: pulse .3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}

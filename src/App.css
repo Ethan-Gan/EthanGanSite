@@ -1,0 +1,71 @@
+:root {
+  --color-primary: #3498db;
+  --color-secondary: #646cff;
+  --color-secondary-hover: #535bf2;
+  --color-text-light: rgba(255, 255, 255, 0.87);
+  --color-text-dark: #1a1a1a;
+  --color-background-light: #ffffff;
+  --color-background-dark: #1a1a1a;
+  --color-background-darker: #111;
+  --color-border: #ddd;
+  --color-text-muted: #666;
+  --color-background-muted: #f0f0f0;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* WEBWIDE default font settings */
+* {
+  font-family: Calibri, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+  
+  html {
+    font-size: 18px; /* Base size */
+  }
+  
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.1875rem); /* 28px (mobile) → 35px (desktop) */
+  }
+  
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.40625rem); /* 20px (mobile) → 22.5px (desktop) */
+  }
+  
+  p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem); /* 16px (mobile) → 18px (desktop) */
+  }
+  
+  span {
+    font-size: clamp(0.875rem, 2vw, 1rem); /* 14px (mobile) → 16px (desktop) */
+  }
+  
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0px;
+  }
+  
+  
+hr {
+  margin: 0px;
+  border: none; 
+  height: 2px;   
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  margin-top: 4px;
+}

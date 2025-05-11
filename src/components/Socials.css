@@ -1,0 +1,41 @@
+
+/* SOCIAL FLEXBOX CONTAINER */
+.social-container {
+  display: flex;
+  /* align-items: flex-start; */
+  /* flex-wrap: wrap;   */
+  width: 25%;
+  /* background-color: #ffffff; */
+  gap: 16px;
+  /* padding: 20px 0px 20px 0px; */
+}
+.icon {
+  width: 24%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-background-darker);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    transition: background-color .3s, color 1s;
+    border-radius: 6px;
+
+}
+
+.icon i {
+  color: var(--color-background-light);
+  font-size: 1.75rem;        /* Can also try 2rem or larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  background-color: var(--color-background-light);
+}
+
+.icon:hover i {
+  color: var(--color-background-darker); /* You can change this to a lighter blue if preferred */
+      cursor: pointer; 
+}
+/* ------------------------------------------- */
