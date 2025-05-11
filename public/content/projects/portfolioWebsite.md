@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This portfolio website is a comprehensive showcase of my skills, projects, and experiences as a web developer. Built using modern web technologies, it serves as both a demonstration of my technical abilities and a platform to share my professional journey with potential employers, clients, and fellow developers. Below is the placeholder image that was used multiple times on my journey to become a developer.
+This portfolio website is a comprehensive showcase of my skills, projects, and experiences as a web developer. Built using modern web technologies, it serves as both a demonstration of my technical abilities and a platform to share my professional journey with potential employers, clients, and fellow developers. 
+
+Below is the placeholder image that was used multiple times in creating this site:
 
 <img src="/images/mountains.png" alt="Portfolio Website Placeholder Image" width="400"/>
 
