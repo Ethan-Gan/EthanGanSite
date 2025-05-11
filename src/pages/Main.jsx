@@ -1,7 +1,6 @@
 import React from 'react';
 import Intro from '../components/Intro';
-import Projects from '../components/projects'; // capitalize this later
-import Socials from '../components/Socials'
+import Projects from '../components/Projects'; // capitalize this later
 
 function Main() {
   return (
