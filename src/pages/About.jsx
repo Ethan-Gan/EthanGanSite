@@ -4,6 +4,7 @@ import './About.css'
 function About() {
   return (
     <div className="about-me">
+      <title>Ethan Gan || About Me</title>
       <h1>About Me</h1>
       <p>
         I belive in continous iteration and improvement as a former highschool lead trumpet player and current engineering student. From improving Tetris skills, logical reasoning, and mathematical thinking, I learned the most effective way to learn is to sink into the subject with unparalleled curiosity.

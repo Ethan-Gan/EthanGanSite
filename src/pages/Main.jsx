@@ -6,6 +6,7 @@ import Socials from '../components/Socials'
 function Main() {
   return (
     <div>
+        <title>Ethan Gan || Home</title>
         <Intro/>
         <Projects type="projects"/>
         <Projects type="experiences"/>
