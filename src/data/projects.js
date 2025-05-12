@@ -3,7 +3,7 @@ export const projects = [
     {
       title: "The Making of This Site",
       slug: "portfolioWebsite",
-      description: "An interactive installation using mirrors to trace solar movement.",
+      description: "An interactive, responsive, and modular portfolio website.",
       image: "/images/blueprint.jpg",
       topics: ["Design","UI","Web"],
     },
