@@ -1,4 +1,6 @@
 :root {
+
+  /* convert to just primary secondary and background and later group two types of set up one for light and one for dark */
   --color-primary: #3498db;
   --color-secondary: #5dade2;         /* lighter steel blue */
   --color-secondary-hover: #2980b9;   /* deeper cobalt blue */

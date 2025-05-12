@@ -3,13 +3,16 @@
   
   
   .card {
-    background: white;
+
     padding: 0px;
     border-radius: 8px;
     box-shadow: 0 2px 5px var(--color-shadow);
     aspect-ratio: 5 / 4;
+    /* light */
+    /* background: white; */
 
-
+    /* dark */
+    background-color:black;
   }
   
   
@@ -18,9 +21,16 @@
   /*   width of cards are 250px */
     width: 100%;
     aspect-ratio: 3 / 2;
-    background-color: var(--color-border);
+
     margin-bottom: 0px;
     border-radius: 8px 8px 0 0;
+
+    /* light */
+    /* background-color: var(--color-border); */
+
+    /* dark */
+    background-color: var(--color-background-dark);
+
   }
 
 
@@ -50,15 +60,25 @@
   .card h2 {
     margin-top: 12px;
     margin-bottom: 16px;
-    color: var(--color-text-dark);
     font-size: 1.5em;
+
+    /* light */
+    /* color: var(--color-text-dark); */
+    
+    /* dark */
+    color: var(--color-text-light);
   }
   
   .card p {
-    color: var(--color-text-muted);
     line-height: 1.5;
     font-style: italic;
     font-size: 1em;
+    
+    /* light */
+    /* color: var(--color-text-muted); */
+
+    /* dark */
+    color: var(--color-text-light);
   }
   
   .topic-container {
@@ -69,23 +89,48 @@
   }
   
   .topic {
-    background-color: var(--color-background-muted);
+
     padding: 4px 10px;
     border-radius: 8px;
     font-size: .75em;
-    color: var(--color-text-muted);
+
+
+    /* light */
+    /* background-color: var(--color-background-muted);
+    color: var(--color-text-muted); */
+
+    /* dark */
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+
   }
   
   
 
 
   .card:hover {
-  transform: translateY(-8px);
+
+
+  /* light */
+    /* transform: translateY(-8px);
   box-shadow: 0 4px 10px var(--color-shadow);
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  border: 2px solid --color-background-dark;
+  cursor: pointer; */
+
+  /* border: 2px solid --color-background-dark;
         border-radius: 8px;
-        border: 2px solid transparent; /* necessary for smooth transition */
+        border: 2px solid transparent; 
+  transition: border 0.2s ease, box-shadow 0.2s ease; */
+
+  /* dark */
+    transform: translateY(-8px);
+  box-shadow: 0 4px 10px var(--color-text-muted);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  border: 2px solid var(--color-text-light);
+        border-radius: 8px;
+        border: 2px solid transparent; 
   transition: border 0.2s ease, box-shadow 0.2s ease;
+
 }
