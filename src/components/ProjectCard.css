@@ -33,7 +33,8 @@
   
   .card-text {
     padding: 0px 16px 28px 16px;
-    height:250px;
+    height:10em;
+
   }
   
   /* .card-container {
@@ -50,12 +51,14 @@
     margin-top: 12px;
     margin-bottom: 16px;
     color: var(--color-text-dark);
+    font-size: 1.5em;
   }
   
   .card p {
     color: var(--color-text-muted);
     line-height: 1.5;
     font-style: italic;
+    font-size: 1em;
   }
   
   .topic-container {
@@ -69,17 +72,12 @@
     background-color: var(--color-background-muted);
     padding: 4px 10px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: .75em;
     color: var(--color-text-muted);
   }
   
   
-  /* Stacking the cards on smaller screens */
-  @media (max-width: 900px) {
-    .grid-container {
-      grid-template-columns: 1fr; /* Stacks the cards vertically on smaller screens */
-    }
-  }
+
 
   .card:hover {
   transform: translateY(-8px);

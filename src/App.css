@@ -1,7 +1,7 @@
 :root {
   --color-primary: #3498db;
-  --color-secondary: #646cff;
-  --color-secondary-hover: #535bf2;
+  --color-secondary: #5dade2;         /* lighter steel blue */
+  --color-secondary-hover: #2980b9;   /* deeper cobalt blue */
   --color-text-light: rgba(255, 255, 255, 0.87);
   --color-text-dark: #1a1a1a;
   --color-background-light: #ffffff;
