@@ -1,7 +1,7 @@
 // data/projects.js
 export const projects = [
     {
-      title: "The Making of This Site",
+      title: "The Making Of This Site",
       slug: "portfolioWebsite",
       description: "An interactive, responsive, and modular portfolio website.",
       image: "/images/blueprint.jpg",
