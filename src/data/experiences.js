@@ -18,7 +18,7 @@ export const experiences = [
       slug: "thornhillContestManager",
       description: "Led coding contests and developed automated testing systems for programming competitions.",
       image: "/images/tssoj.png",
-      topics: ["Education", "I/O Testing", "Programming"],
+      topics: ["Education", "I/O Testing", "Programming", "C++"],
     },
     
   ];

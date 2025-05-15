@@ -5,7 +5,7 @@ export const projects = [
       slug: "portfolioWebsite",
       description: "An interactive, responsive, and modular portfolio website.",
       image: "/images/blueprint.jpg",
-      topics: ["Design","UI","Web"],
+      topics: ["UI/UX Design", "React.js", "CSS", "Netlify"],
     },
     {
       title: "TankRunners",
@@ -18,7 +18,7 @@ export const projects = [
       title: "WalkAlong Hovercraft",
       slug: "walkAlongHovercraft",
       description: "1:32 scale functioning educational hovercraft.",
-      image: "/images/hovercraft.png",
+      image: "/images/hovercrafto.png",
       topics: ["Arduino C","SketchUp","TinkerCAD", "3D Printing"],
     },
     // Add more...
