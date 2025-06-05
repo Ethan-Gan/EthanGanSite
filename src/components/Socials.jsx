@@ -21,7 +21,7 @@ const Socials = () => (
         {/* Github Icon */}
         <div class="icon">
 
-            <a href="https://github.com/kobotabby/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Ethan-Gan/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-github"></i>
             </a>
             
