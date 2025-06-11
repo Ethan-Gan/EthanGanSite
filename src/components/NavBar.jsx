@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${show ? "visible" : "hidden"}`}>
       <div className="navbar-content">
-        <Link to="/"><h1 className="logo">Ethan Gan</h1></Link>
+        <Link to="/"><h1 className="logo">ETHAN GAN</h1></Link>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>

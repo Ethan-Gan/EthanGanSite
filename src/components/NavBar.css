@@ -41,14 +41,16 @@ nav li {
 .logo {
   text-decoration: none;
   color: var(--color-text-dark);
-  font-weight: 500;
+  font-weight: 700;
   /* padding: 10px 20px; */
   transition: all 0.3s ease;
   /* display: block; */
+    font-size: 2.4rem;
 }
-
 .logo:hover {
   color: var(--color-primary);
+  font-weight: 700;
+
 }
 
 .navbar {
@@ -62,6 +64,8 @@ nav li {
     opacity 0.3s ease,
     background-color 1s ease; 
   z-index: 1000;
+      font-size: 1.2rem;
+        font-weight: 500;
 }
 
 .navbar.hidden {
