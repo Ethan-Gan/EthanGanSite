@@ -1,5 +1,5 @@
 
-# EXPERIENCE WRAP-UP: Co-Presidency   
+# HIGHLIGHTS: Co-Presidency   
 *THORNHILL SECONDARY SCHOOL MUSIC COUNCIL* – Thornhill, ON  
 *September 2023 – June 2024*
 

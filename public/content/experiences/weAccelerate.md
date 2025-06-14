@@ -28,11 +28,14 @@ Part of limiting frustration and the barrier to learning is knowing where to sta
 ## Project Results 
  As a result, we were commended by our program group lead and were asked if they could use our recorded presentation as a reference for future students and mentors. Our presentation received the highest possible score and I and another group member received the best scores for participation and communication. 
 
+## Skill Development / Certification
+- **Microsoft Azure Artificial Intelligence Fundamentals (AI900) Certification**
+- **Microsoft Azure Fundamentals (AZ900) Certification**
+- **UX Wireframe and Flowchart Design**
 
 
 
-
-# EXPERIENCE WRAP-UP: <br> Project Team Member  
+# HIGHLIGHTS: <br> Co-op Project Team Member  
 **Waterloo Experience (WE) Accelerate Program** – Waterloo, ON  
 *January 2025 – April 2025*
 

@@ -6,7 +6,7 @@
 The WalkAlong Hovercraft is an educational project designed to teach fluid dynamics and control systems through a hands-on, functional hovercraft model. It highlights core engineering principles like Bernoulli’s Principle, Newton’s Third Law, and servo-based rudder control, packaged in a compact, interactive build.
 <br>
 <br>
-View the link below for the full project summary:<br>
+Enter the link below for the full project summary:<br>
 [Learn more about the design process and circuitry](https://docs.google.com/document/d/1Iyem7uSe8yrXEgWlVsdEcOtidY_0oCYi/edit#heading=h.gjdgxs)
 
 ## Features

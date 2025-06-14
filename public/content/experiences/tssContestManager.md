@@ -7,7 +7,7 @@ It was always funny problem descriptions or memes that caused heads to perk up t
 My goal was to grab people in with weird stories and hook them with an overarching plot. 
 
 A problem I am particularly fond of is a BFS problem with the goal of finding coals in Santa's mine on behalf of elves banished to Sata's infamous "Jolly" coal mines due to the absurdity of the problem description and fun implementation of a basic search concept. <br>
-[TCCC '23 Dec P1 - The Jolly Mines](https://tssoj.ca/problem/tccc23dec3)
+[TCCC '23 Dec P1 - The Jolly Mines](https://tssoj.ca/problem/tccc23dec1)
 
 Another problem I developed showcases the application of contest programming and string algorithms on DNA sequencing through breaking an mRNA strand into groups of triplet base pairs. My goal was to demonstrate the transferrable skills gained in the process of learning to code. <br>
 [TCCC '23 Sept P4 - DNA Lengths](https://tssoj.ca/problem/tccc23sept4)
@@ -25,7 +25,7 @@ For example, for the Jolly Mines problem I had to work backwards and generate re
 
 
 
-# EXPERIENCE WRAP-UP: Coding Contest Manager  
+# HIGHLIGHTS: Coding Contest Manager  
 **Thornhill Secondary School Computer Club** – Thornhill, ON  
 *2023 – 2024*
 

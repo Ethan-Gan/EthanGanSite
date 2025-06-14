@@ -4,7 +4,7 @@ export const projects = [
       title: "The Making Of This Site",
       slug: "portfolioWebsite",
       description: "An interactive, responsive, and modular portfolio website.",
-      image: "/images/blueprint.jpg",
+      image: "/images/wireframe.jpg",
       topics: ["UI/UX Design", "React.js", "CSS", "Netlify"],
     },
     {
