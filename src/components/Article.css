@@ -29,7 +29,7 @@
   margin-bottom: 0.5em;
   border-bottom: 2px solid var(--color-border);
   padding-bottom: 0.3em;
-  color: var(--color-text-light);
+  color: var(--color-secondary);
 }
 
 .article-body h2 {
@@ -125,7 +125,7 @@
 }
 
 .article-body code {
-  background-color: var(--color-background-muted);
+  background-color: var(--color-shadow);
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-family: 'Courier New', monospace;

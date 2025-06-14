@@ -1,6 +1,8 @@
-# TankRunners II: The 25 Chambers
+# Creating in my Favourite Genre of Shoot-em Up
 
-## Introduction
+<img src="/images/tankrunnerimage.png" alt="tankThumbnail" width="400"/>
+
+## TankRunners II: The 25 Chambers
 
 **TankRunners II: The 25 Chambers** is a 2D top-down dungeon shooter developed as a final project for ICS4U (Grade 12 Computer Science). This game features procedurally generated levels, increasing difficulty, and real-time combat mechanics. Designed in Java using core GUI components like `JFrame` and `JPanel`, the project explores game architecture, algorithmic content generation, and AI pathfinding.
 

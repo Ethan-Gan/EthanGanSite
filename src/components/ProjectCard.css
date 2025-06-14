@@ -36,7 +36,18 @@
     height:10em;
 
   }
-  
+  .card p {
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 1em;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;            /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
   /* .card-container {
     padding: 20px 20px 10px 20px;
   } */

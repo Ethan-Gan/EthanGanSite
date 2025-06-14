@@ -12,14 +12,14 @@ export const projects = [
       slug: "tankRunners",
       description: "Procedurally generated Java dungeon shoot-em-up.",
       image: "/images/tankrunnerimage.png",
-      topics: ["Game Development","Java","Procedural Generation"],
+      topics: ["Game Dev","Java","Procedural Generation", "OOP"],
     },
     {
       title: "WalkAlong Hovercraft",
       slug: "walkAlongHovercraft",
       description: "1:32 scale functioning educational hovercraft.",
       image: "/images/hovercrafto.png",
-      topics: ["Arduino C","SketchUp","TinkerCAD", "3D Printing"],
+      topics: ["Arduino C","SketchUp","TinkerCAD", "3D Printing", "Engineering Design", "Circuit Design"],
     },
     // Add more...
   ];
