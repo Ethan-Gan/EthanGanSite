@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link to="/"><h1 className="logo">ETHAN GAN</h1></Link>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
+          {/* <li><Link to="/about">About</Link></li> */}
           <li><Link to="/resume">Resume</Link></li>
         </ul>
       </div>
