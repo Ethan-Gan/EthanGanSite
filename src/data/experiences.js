@@ -7,9 +7,9 @@ export const experiences = [
       topics: ["Azure", "Cloud", "AI", "UX Design"],
     },  
     {
-      title: "Principal Academy",
+      title: "Making Programming Fun and Accessible!",
       slug: "principalAcademy",
-      description: "Science and Technology Education Instructor and Media Coordinator, contributing to student growth and website optimization.",
+      description: "My experience as a Science and Technology Education Instructor and Media Coordinator.",
       image: "/images/pa.png",
       topics: ["Education", "Web & Logo Design", "Python", "Scratch"],
     },

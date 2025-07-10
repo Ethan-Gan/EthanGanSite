@@ -3,8 +3,7 @@ import Intro from '../components/Intro';
 import Projects from '../components/Projects'; // capitalize this later
 
 import Squares from '../reactbits/Squares';
-// import BorderSquares from '../reactbits/BorderSquares';
-  
+import ArticleBackground from '../reactbits/ArticleBackground';
 import ClickSpark from '../reactbits/ClickSpark';
 
 
@@ -13,8 +12,8 @@ function Main() {
     <div>
       <ClickSpark> </ClickSpark>
 
-      <Squares />
-
+      <Squares direction=''/>
+      <ArticleBackground color="var(--color-background-dark)"/>
       {/* <Squares /> */}
       <title>Ethan Gan || Home</title>
       <Intro/>
