@@ -1,0 +1,10 @@
+.article-background {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 850px;
+  height: 100vh;
+  z-index: -1;
+  background-color: #f0f0f0;
+}

@@ -4,6 +4,9 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { useParams } from "react-router";
 import './Article.css'
+import Squares from '../reactbits/Squares';
+
+import ArticleBackground from '../reactbits/ArticleBackground';
 
 const Article = ({section}) => {
   const [content, setContent] = useState("");
@@ -25,6 +28,9 @@ const Article = ({section}) => {
   }, [filePath]);
 
   return (
+    <div>
+    <Squares direction=""/>
+    <ArticleBackground color="var(--color-background-dark)" />
     <div className="article-body">
       {content ? (
         <ReactMarkdown
@@ -40,6 +46,7 @@ const Article = ({section}) => {
       ) : (
         <p className="loadingMessage">Loading...</p>
       )}
+    </div>
     </div>
   );
 };
