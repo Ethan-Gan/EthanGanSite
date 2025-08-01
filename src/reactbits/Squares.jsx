@@ -4,12 +4,12 @@ import './Squares.css';
 const Squares = ({
   direction = 'diagonal',
   speed = .5,
-//   borderColor = 'rgba(39, 30, 55, 1)',
-    borderColor = 'rgba(56, 125, 199, 0.5)', // bright red
+  borderColor = 'rgba(39, 30, 55, 1)',
+    // borderColor = 'rgba(56, 125, 199, 0.5)', // bright red
 //    borderColor = 'rgba(30, 30, 120, 1)',
     // borderColor = '#020c33',
 
-    squareSize = 40,
+    squareSize = 120,
   hoverFillColor = '#222',
   className = ''
 }) => {
