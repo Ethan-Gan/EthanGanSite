@@ -12,7 +12,7 @@ function Main() {
     <div>
       <ClickSpark> </ClickSpark>
 
-      <Squares direction='diagonal'/>
+      <Squares direction=''/>
       {/* <ArticleBackground color="var(--color-background-dark)"/> */}
       {/* <Squares /> */}
       <title>Ethan Gan || Home</title>
