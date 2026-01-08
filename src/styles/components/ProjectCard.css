@@ -53,7 +53,8 @@
     color: var(--color-text-dark);
     font-size: 1.5em;
   }
-  
+ 
+  /* old  */
   .card p {
     color: var(--color-text-muted);
     line-height: 1.5;
@@ -61,6 +62,17 @@
     font-size: 1em;
   }
   
+.card p {
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* Allow more/fewer lines of description */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
   .topic-container {
     display: flex;
     gap: 10px;

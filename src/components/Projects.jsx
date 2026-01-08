@@ -2,7 +2,7 @@ import { projects } from "../data/projects";
 import { experiences } from "../data/experiences";
 
 import ProjectCard from "./ProjectCard";
-import './Projects.css';
+import '../styles/components/Projects.css';
 
 function Projects({type="projects"}) {  
   if (type =="projects"  && projects.length > 0) {

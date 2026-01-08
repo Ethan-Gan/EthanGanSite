@@ -1,5 +1,5 @@
 import React from 'react';
-import './Intro.css';
+import '../styles/components/Intro.css';
 import Socials from './Socials'
 
 function Intro() {

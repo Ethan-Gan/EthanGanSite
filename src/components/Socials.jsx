@@ -1,4 +1,4 @@
-import './Socials.css';
+import '../styles/components/Socials.css';
 
 const Socials = () => (
 

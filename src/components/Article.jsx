@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { useParams } from "react-router";
-import './Article.css'
+import '../styles/components/Article.css'
 import Squares from '../reactbits/Squares';
 
 import ArticleBackground from '../reactbits/ArticleBackground';

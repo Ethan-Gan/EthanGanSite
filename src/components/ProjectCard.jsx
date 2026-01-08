@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './ProjectCard.css';
+import '../styles/components/ProjectCard.css';
 
 
 const ProjectCard = ({ project,type="projects" }) => (

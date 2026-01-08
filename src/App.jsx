@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import NotFound from "./components/NotFound";
 import NavBar from "./components/NavBar";
 
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import './Squares.css';
+import '../styles/reactbits/Squares.css';
 
 const Squares = ({
   direction = 'diagonal',

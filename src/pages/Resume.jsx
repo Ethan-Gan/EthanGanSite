@@ -1,5 +1,5 @@
 import React from 'react';
-import './Resume.css';
+import '../styles/pages/Resume.css';
 import Squares from '../reactbits/Squares';
 
 import ArticleBackground from '../reactbits/ArticleBackground';

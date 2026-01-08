@@ -1,5 +1,5 @@
 
-import './ArticleBackground.css';
+import '../styles/reactbits/ArticleBackground.css';
 
 const ArticleBackground = ({ color = '#f0f0f0' }) => {
   return (
