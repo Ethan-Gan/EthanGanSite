@@ -1,5 +1,13 @@
 // data/projects.js
 export const projects = [
+    
+      {
+      title: "Inventory Management System",
+      slug: "inventoryManagementSystem",
+      description: "Built to solve inventory and purchase request woes for UW Student Design Teams.",
+      image: "/images/inventoryproj.png",
+      topics: ["React.js", "Node.js", "Express.js", "REST APIs", "PostgreSQL", "Database Design", "Sequelize"]
+    },
     {
       title: "The Making Of This Site",
       slug: "portfolioWebsite",
@@ -7,6 +15,7 @@ export const projects = [
       image: "/images/wireframe.jpg",
       topics: ["UI/UX Design", "React.js", "CSS", "Netlify"],
     },
+    
     {
       title: "TankRunners",
       slug: "tankRunners",
