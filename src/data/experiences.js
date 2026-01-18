@@ -1,5 +1,12 @@
 export const experiences = [
     {
+      title: "Conducting End-To-End Data Analysis",
+      slug: "studentExperienceAnalyst",
+      description: "My experience as a Student Experience Analyst Co-op at the University of Waterloo.",
+      image: "/images/uwstudentanalyst.png",
+      topics: ["Survey Design", "Interviews",  "Data Analysis", "Excel"],
+    },  
+    {
       title: "Designing for Seniors in the WE Accelerate Program",
       slug: "weAccelerate",
       description: "Conceptualized an AI-powered fraud prevention tool for seniors using Microsoft Azure services.",

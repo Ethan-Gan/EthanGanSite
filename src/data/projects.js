@@ -15,7 +15,14 @@ export const projects = [
       image: "/images/wireframe.jpg",
       topics: ["UI/UX Design", "React.js", "CSS", "Netlify"],
     },
-    
+        {
+      title: "Office Calendar Project",
+      slug: "officeCalendarProject",
+      description: "An automatically updating office calendar.",
+      image: "/images/officecalendar.png",
+      topics: ["Microsoft Excel", "Excel VBA & Macros", "Basic Database Design"],
+    },
+
     {
       title: "TankRunners",
       slug: "tankRunners",
