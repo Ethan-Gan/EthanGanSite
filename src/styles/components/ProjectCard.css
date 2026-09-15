@@ -1,0 +1,108 @@
+
+
+  
+  
+  .card {
+    background: var(--color-surface);
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--color-shadow);
+    aspect-ratio: 5 / 4;
+    /* Transparent border reserved so the white hover outline doesn't shift layout. */
+    border: 3px solid transparent;
+    transition: border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  
+  .card-image {
+    /*   should be made with a 3 to 2 image ratio */
+  /*   width of cards are 250px */
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    background-color: var(--color-surface);
+    margin-bottom: 0px;
+    border-radius: 8px 8px 0 0;
+  }
+
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or 'contain' depending on behavior */
+    border-radius: 8px 8px 0 0; /* match parent if needed */
+  }
+  
+  .card-text {
+    padding: 0px 16px 28px 16px;
+    height:10em;
+
+  }
+
+  /* .card-container {
+    padding: 20px 20px 10px 20px;
+  } */
+  
+  section h1 {
+    text-align: Left;
+    padding: 20px 20px 4px 0px;
+    
+  }
+  
+  .card h2 {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: var(--color-text-inverse);
+    font-size: 1.5em;
+    /* Never spill: truncate a long title to one line with an ellipsis. */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+ 
+  /* old  */
+  .card p {
+    color: var(--color-text-inverse);
+    line-height: 1.5;
+    font-style: italic;
+    font-size: 1em;
+  }
+  
+.card p {
+  color: var(--color-text-inverse);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* Allow more/fewer lines of description */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;      /* end with … when clamped */
+  overflow-wrap: break-word;    /* break long unbroken words instead of spilling */
+}
+
+  .topic-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  
+  .topic {
+    background-color: var(--color-surface-muted);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: .75em;
+    color: var(--color-text-inverse); /* dark text on the light chip */
+    box-shadow: 0 1px 3px var(--color-shadow-strong);
+  }
+  
+  
+
+
+  .card:hover {
+  transform: scale(1.06); /* zoom outward from the card's center */
+  transform-origin: center;
+  box-shadow: 0 12px 28px var(--color-shadow-strong); /* stronger shadow to match */
+  cursor: pointer;
+  border: 3px solid var(--color-surface); /* thick white outline on hover */
+}

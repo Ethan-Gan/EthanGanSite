@@ -1,0 +1,121 @@
+
+/* nav bar stuff */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+nav li {
+  margin: 0;
+}
+
+.nav-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  /* Initial: white filled button with dark text (on the black bar). */
+  color: var(--color-text-inverse);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-surface);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: block;
+  text-transform: uppercase;
+  font-family: Calibri, Verdana, sans-serif; /* match heading font */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  /* Transition to black fill with a white border and white text. */
+  color: var(--color-surface);
+  background-color: var(--color-surface-darker);
+  border-color: var(--color-surface);
+  transform: scale(1.06); /* grow like the project cards */
+  transform-origin: center;
+}
+
+/* Colored buttons: Projects = blue, Experiences = green (matches the section
+   zones). Default: colored fill with black text. Hover: black fill with colored
+   text + colored border. */
+.nav-links a[href="/#projects"] {
+  color: var(--color-text-inverse);
+  background-color: var(--color-zone-blue);
+  border-color: var(--color-zone-blue);
+}
+.nav-links a[href="/#projects"]:hover {
+  color: var(--color-zone-blue);
+  background-color: var(--color-surface-darker);
+  border-color: var(--color-zone-blue);
+}
+.nav-links a[href="/#experiences"] {
+  color: var(--color-text-inverse);
+  background-color: var(--color-zone-green);
+  border-color: var(--color-zone-green);
+}
+.nav-links a[href="/#experiences"]:hover {
+  color: var(--color-zone-green);
+  background-color: var(--color-surface-darker);
+  border-color: var(--color-zone-green);
+}
+
+.logo {
+  text-decoration: none;
+  /* Match the nav buttons: white fill box with black text. */
+  color: var(--color-text-inverse);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-surface);
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-size: 1.6rem;
+}
+.logo:hover {
+  /* Same interaction as the buttons: black fill, white text, white border. */
+  color: var(--color-surface);
+  background-color: var(--color-surface-darker);
+  border-color: var(--color-surface);
+  transform: scale(1.06); /* grow like the project cards */
+  transform-origin: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px var(--color-shadow);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    background-color 1s ease; 
+  z-index: 1000;
+      font-size: 1.2rem;
+        font-weight: 500;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  opacity: 0.95;
+  background-color: var(--color-surface-darker);
+}
+.navbar-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

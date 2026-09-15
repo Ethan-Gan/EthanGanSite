@@ -1,0 +1,23 @@
+import React from 'react';
+import '../styles/pages/Resume.css';
+import Squares from '../reactbits/Squares';
+
+import ArticleBackground from '../reactbits/ArticleBackground';
+import { SHOW_SQUARES } from '../config';
+
+
+function Resume() {
+  return (
+    <div>
+
+      {SHOW_SQUARES && <Squares direction="" />}
+      <ArticleBackground color="var(--color-surface-dark)" />
+    <title>Ethan Gan || Resume</title>
+      {/* <h1>Resume</h1>
+      <p>This is where you can find my professional experience and skills.</p> */}
+      <iframe id="myPDF" src="/content/pdf/ethanganresume.pdf" frameborder="0"></iframe>
+    </div>
+  );
+}
+
+export default Resume;

@@ -1,0 +1,20 @@
+footer hr {
+  margin-top: 20px;
+}
+/* Hide the footer line only on the home page (see Footer.jsx). */
+footer.no-line hr {
+  display: none;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  /* background-color: blue; */
+
+}
+
+.trademark {
+  margin-left: auto;
+  padding: 0px;
+}

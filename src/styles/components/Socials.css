@@ -1,0 +1,47 @@
+
+/* SOCIAL FLEXBOX CONTAINER */
+.social-container {
+  display: flex;
+  /* align-items: flex-start; */
+  /* flex-wrap: wrap;   */
+  width: 25%;
+  gap: 16px;
+  /* padding: 20px 0px 20px 0px; */
+}
+.icon {
+  width: 24%;
+  aspect-ratio: 1 / 1;
+  /* Default: white tile with a dark icon and a black border (matches the navbar). */
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-surface-darker);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    transition: background-color .3s, color 1s, transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    border-radius: 6px;
+
+}
+
+.icon i {
+  color: var(--color-surface-darker);
+  font-size: 1.75rem;        /* Can also try 2rem or larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  /* Hover: flip to a dark tile with a white icon and white border, and grow like the cards. */
+  background-color: var(--color-surface-darker);
+  border-color: var(--color-surface);
+  transform: scale(1.15);
+  transform-origin: center;
+  box-shadow: 0 12px 28px var(--color-shadow-strong);
+}
+
+.icon:hover i {
+  color: var(--color-surface);
+      cursor: pointer; 
+}
+/* ------------------------------------------- */

@@ -1,0 +1,70 @@
+  .card-gallery hr{
+    margin:0px 0px 0 0px ;
+    display: none; /* hide the blue divider under Projects/Experiences headings */
+  }
+
+  /* Outline box (no fill, rounded) around each section title, spanning the
+     full grid width. Replaces the old <hr> divider. */
+  .card-gallery h1 {
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    background: none; /* outline only, no fill */
+    color: var(--color-surface);
+    padding: 12px 20px;
+    margin-top: 20px;
+  }
+
+  /* Section zones — a large, slightly-transparent colored fill with a rounded
+     border around the whole section (blue = Projects, green = Experiences),
+     matching the look of the title label box. The label itself stays outline
+     only (background: none) so its tint doesn't stack on top of the zone fill. */
+  .card-gallery {
+    /* Full-bleed: break out of the centered 900px body column so the zone spans
+       the full viewport width. Inner content is padded back to the 900px column
+       so the cards stay aligned. Square corners (no border-radius). */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    border: 2px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 8px calc(50vw - 450px) 24px;
+    box-sizing: border-box;
+    scroll-margin-top: 0; /* scroll deep so the colored zone reaches the very top of the screen */
+  }
+
+  /* On narrow screens the 900px column math goes negative, so use a small inset. */
+  @media (max-width: 900px) {
+    .card-gallery {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .zone-projects {
+    border-color: var(--color-zone-blue);
+    background: var(--color-zone-blue-fill);
+  }
+  .zone-experiences {
+    border-color: var(--color-zone-green);
+    background: var(--color-zone-green-fill);
+  }
+  /* Experiences title label border follows its green zone. */
+  .zone-experiences h1 {
+    border-color: var(--color-zone-green);
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 24px 0px;
+  }
+  
+
+  /* Stacking the cards on smaller screens */
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

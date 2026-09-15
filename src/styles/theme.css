@@ -1,0 +1,142 @@
+/* =============================================================================
+   theme.css — Single source of truth for color.
+
+   Convention: two layers.
+
+   1. PALETTE layer (--palette-*): raw, literal color values. These are the only
+      place hex/rgb literals should ever live. Think of them as the "crayon box".
+      Palette tokens are theme-agnostic and should NOT be used directly in
+      component styles.
+
+   2. SEMANTIC layer (--color-*): role-based tokens (surface, text, accent, ...)
+      that POINT at palette entries. Components should only ever consume semantic
+      tokens. When we add a light/dark theme later, we only re-point the semantic
+      layer under a selector (see the commented [data-theme="light"] stub at the
+      bottom) — the palette and every component style stay untouched.
+
+   HOW TO ADD A LIGHT THEME LATER (small, self-contained change):
+     1. Uncomment the [data-theme="light"] block at the bottom of this file and
+        adjust the re-pointed semantic tokens to taste. You only touch semantic
+        tokens here — never the palette, never component styles.
+     2. Set the active theme on the root element, e.g. in index.html or main.jsx:
+          document.documentElement.setAttribute('data-theme', 'light');
+        or, to follow the OS setting, key it off matchMedia:
+          window.matchMedia('(prefers-color-scheme: light)')
+        (You could also swap the selector to @media (prefers-color-scheme: light)
+         if you never want a manual toggle.)
+     3. The reactbits canvas colors (--color-grid-*, --color-spark) are read once
+        via getThemeColor() in JS. If you add runtime theme switching, re-read
+        them (e.g. remount those components or read inside an effect keyed on the
+        active theme) so the canvas picks up the new values.
+
+   NOTE: color-scheme is currently declared in index.css and left as-is.
+   ============================================================================ */
+
+:root {
+  /* ---------------------------------------------------------------------------
+     PALETTE — raw values only. Do not reference these directly in components.
+     --------------------------------------------------------------------------- */
+  --palette-blue-400: #5dade2;          /* lighter steel blue */
+  --palette-blue-500: #3498db;          /* primary blue */
+  --palette-blue-700: #2980b9;          /* deeper cobalt blue */
+
+  --palette-white: #ffffff;
+  --palette-gray-100: #f0f0f0;          /* muted light background */
+  --palette-gray-300: #dddddd;          /* borders */
+  --palette-gray-400: #b0b0b0;          /* muted text on dark surfaces (WCAG AA on #111) */
+  --palette-gray-700: #313131;          /* muted text on light surfaces */
+  --palette-gray-800: #222222;           /* canvas hover fill */
+  --palette-gray-900: #1a1a1a;          /* near-black surface / text */
+  --palette-black-900: #111111;         /* darkest surface */
+  --palette-purple-900: rgba(39, 30, 55, 1); /* decorative grid line */
+
+  --palette-white-a87: rgba(255, 255, 255, 0.87); /* primary text on dark */
+  --palette-black-a10: rgba(0, 0, 0, 0.1);        /* subtle shadow */
+  --palette-black-a35: rgba(0, 0, 0, 0.35);       /* stronger shadow (hover) */
+  --palette-blue-a12: rgba(52, 152, 219, 0.12);   /* low-opacity blue tint (from #3498db) */
+  --palette-green-a12: rgba(46, 204, 113, 0.12);  /* low-opacity green tint (from #2ecc71) */
+  --palette-green-500: #2ecc71;                   /* zone green (same saturation family as blue-500) */
+
+  /* ---------------------------------------------------------------------------
+     SEMANTIC TOKENS — role-based. Components consume ONLY these.
+     Defaults below describe the current (dark) look of the site.
+     --------------------------------------------------------------------------- */
+
+  /* Accent — links, highlights, interactive emphasis */
+  --color-accent: var(--palette-blue-400);          /* default accent (links) */
+  --color-accent-strong: var(--palette-blue-500);   /* stronger accent / primary */
+  --color-accent-hover: var(--palette-blue-700);    /* accent hover state */
+  --color-accent-tint: var(--palette-blue-a12);     /* low-opacity blue fill (accent boxes) */
+
+  /* Section zone accents — colored border + slightly transparent fill used to
+     "zone" a whole section (blue = Projects, green = Experiences). */
+  --color-zone-blue: var(--palette-blue-500);       /* blue zone border */
+  --color-zone-blue-fill: var(--palette-blue-a12);  /* blue zone fill */
+  --color-zone-green: var(--palette-green-500);     /* green zone border */
+  --color-zone-green-fill: var(--palette-green-a12);/* green zone fill */
+
+  /* Surfaces — backgrounds, from lightest to darkest */
+  --color-surface: var(--palette-white);            /* light/white surface (cards, code) */
+  --color-surface-muted: var(--palette-gray-100);   /* muted light surface (tags, bg) */
+  --color-surface-dark: var(--palette-gray-900);    /* dark app surface */
+  --color-surface-darker: var(--palette-black-900); /* darkest surface (nav pills, icons, cards) */
+  --color-surface-elevated: var(--palette-gray-800); /* raised element on a dark surface (chips) */
+
+  /* Text */
+  --color-text: var(--palette-white-a87);           /* primary text on dark surfaces */
+  --color-text-inverse: var(--palette-gray-900);    /* text on light surfaces */
+  --color-text-muted: var(--palette-gray-700);      /* secondary text on LIGHT surfaces */
+  --color-text-muted-on-dark: var(--palette-gray-400); /* secondary text on DARK surfaces (AA) */
+
+  /* Lines & depth */
+  --color-border: var(--palette-gray-300);          /* borders, dividers */
+  --color-shadow: var(--palette-black-a10);         /* box-shadow color */
+  --color-shadow-strong: var(--palette-black-a35);  /* stronger shadow (hover emphasis) */
+
+  /* Decorative canvas colors (reactbits) — consumed via getComputedStyle in JS,
+     so they must resolve to concrete color values (no nested var indirection
+     that a canvas can't read). */
+  --color-grid-line: var(--palette-purple-900);     /* Squares grid stroke */
+  --color-grid-hover: var(--palette-gray-800);      /* Squares hovered cell fill */
+  --color-spark: var(--palette-white);              /* ClickSpark stroke */
+}
+
+/* -----------------------------------------------------------------------------
+   FUTURE LIGHT THEME (inert stub — do NOT activate yet).
+
+   This block is intentionally commented out so behavior is unchanged. When you
+   want light mode, uncomment it, tweak the values, and set data-theme="light" on
+   <html> (see step 2 in the header). Every semantic token is listed below so you
+   can see exactly what a theme controls — re-point only the ones that should
+   differ in light mode; delete the rest or leave them to inherit the :root value.
+
+   The palette values referenced here already exist above, so no new colors are
+   needed to get a basic light theme working.
+
+   [data-theme="light"] {
+     -- Accent (links usually stay the same across themes) --
+     --color-accent:         var(--palette-blue-500);
+     --color-accent-strong:  var(--palette-blue-700);
+     --color-accent-hover:   var(--palette-blue-500);
+
+     -- Surfaces flip: light backgrounds become the primary surface --
+     --color-surface:        var(--palette-gray-900);   |* was white  *|
+     --color-surface-muted:  var(--palette-gray-800);
+     --color-surface-dark:   var(--palette-white);      |* app bg goes light *|
+     --color-surface-darker: var(--palette-gray-100);
+
+     -- Text flips: dark text on light surfaces --
+     --color-text:           var(--palette-gray-900);   |* was near-white *|
+     --color-text-inverse:   var(--palette-white-a87);
+     --color-text-muted:     var(--palette-gray-700);
+
+     -- Lines & depth --
+     --color-border:         var(--palette-gray-300);
+     --color-shadow:         var(--palette-black-a10);
+
+     -- Decorative canvas (adjust so it reads well on a light background) --
+     --color-grid-line:      var(--palette-gray-300);
+     --color-grid-hover:     var(--palette-gray-100);
+     --color-spark:          var(--palette-gray-900);
+   }
+   ----------------------------------------------------------------------------- */

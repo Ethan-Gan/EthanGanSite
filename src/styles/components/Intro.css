@@ -1,0 +1,19 @@
+.intro-section {
+  padding: 4em 0px;
+}
+
+/* Blue outline box (no fill, rounded) around the Bon Jovi quote — matches the
+   Projects/Experiences section title boxes. */
+.intro-quote {
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  background: none;
+  padding: 12px 20px;
+}
+
+.intro-section h3 {
+  padding: 24px 0px 0px 0px;
+}
+.intro-section p {
+  padding: 24px 0px 24px 0px;
+}
